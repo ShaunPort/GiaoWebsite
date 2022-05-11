@@ -10,7 +10,7 @@ header {
         padding: 1rem;
         align-items: center;
         .logo {
-            color: #a29bfe;
+            color: @theme;
             font-weight: bold;
             margin-right: 24px;
             font-size: 1.4rem;
@@ -35,12 +35,12 @@ header {
             }
             .form {
                 a {
-                    border: 0.18rem solid #a29bfe;
+                    border: 0.18rem solid @theme;
                     border-radius: 0.4rem;
                     padding: 0.2rem 0.8rem;
-                    color: #a29bfe;
+                    color: @theme;
                     &.form-gb {
-                        background: #a29bfe;
+                        background: @theme;
                         color: #fff;
                         margin-left: 8px;
                     }
@@ -102,20 +102,25 @@ header {
 
 <template>
     <div>
+        <!-- 导航栏 -->
         <header class="mb-3">
             <div class="container">
                 <div class="navbar">
-                    <a href="" class="logo">Templete</a>
+                    <!-- logo -->
+                    <a href="" class="logo">Giao</a>
+                    <!-- 手机端才展示的按钮 -->
                     <label for="toggle-nav">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </label>
+                    <!-- 用于手机端，菜单栏的弹出 -->
                     <input type="checkbox" id="toggle-nav" />
+                    <!-- 菜单栏 -->
                     <div class="collapse">
                         <ul class="links">
-                            <li><a href="">在线教程</a></li>
-                            <li><a href="">社区讨论</a></li>
-                            <li><a href="">实战课程</a></li>
-                            <li><a href="">在线文档</a></li>
+                            <li><router-link :to="'/home'">首页</router-link></li>
+                            <li><router-link :to="'/resume'">个人简历</router-link></li>
+                            <li><router-link :to="'/resume'">Blog</router-link></li>
+                            <li><router-link :to="'/resume'">项目作业</router-link></li>
                         </ul>
                         <div class="form">
                             <a href="">注册</a>
@@ -125,6 +130,7 @@ header {
                 </div>
             </div>
         </header>
+        <!-- 内容 -->
         <router-view />
     </div>
 </template>

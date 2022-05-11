@@ -32,6 +32,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 更新日志
 
+2022-5-11 22:56
+
+1.   配置各页面的路由
+2.   完成简历页面
+
+
+
 2022-5-10 22:39
 
 1.   完成List组件
