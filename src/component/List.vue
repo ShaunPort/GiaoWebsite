@@ -24,7 +24,7 @@ export default {
         justify-content: space-between;
         padding: 0.8rem 0;
         border-bottom: solid 1px #ddd;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         &:last-child {
             border-bottom: none;
         }

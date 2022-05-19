@@ -67,7 +67,10 @@
                                     <span> 技能清单 </span>
                                 </template>
                                 <span class="title">熟练掌握的技能：</span>
-                                <Card class="card" style="border: none; box-shadow: none">
+                                <Card
+                                    class="card"
+                                    style="border: none; box-shadow: none"
+                                >
                                     <List v-bind:items="familiar">
                                         <template v-slot:item="{ item }">
                                             <div>
@@ -80,7 +83,10 @@
                                     </List>
                                 </Card>
                                 <span class="title">接触并了解的技能：</span>
-                                <Card class="card" style="border: none; box-shadow: none">
+                                <Card
+                                    class="card"
+                                    style="border: none; box-shadow: none"
+                                >
                                     <List v-bind:items="commonly">
                                         <template v-slot:item="{ item }">
                                             <div>
@@ -204,9 +210,8 @@ export default {
     }
 
     .card-body {
-
         .content {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             display: flex;
             span {
                 display: block;
@@ -239,6 +244,24 @@ export default {
             color: #777;
         }
     }
+}
+
+@media @medium {
+.comment,
+.skill,
+.education {
+    .card-body {
+        .content {
+            font-size: 1rem;
+            display: flex;
+            span {
+                display: block;
+                padding-left: 1rem;
+            }
+        }
+
+    }
+}
 }
 
 @media @small {
