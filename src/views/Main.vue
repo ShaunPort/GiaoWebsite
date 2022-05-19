@@ -119,13 +119,13 @@ header {
                         <ul class="links">
                             <li><router-link :to="'/home'">首页</router-link></li>
                             <li><router-link :to="'/resume'">个人简历</router-link></li>
-                            <li><router-link :to="'/resume'">Blog</router-link></li>
-                            <li><router-link :to="'/resume'">项目作业</router-link></li>
+                            <li><router-link :to="'/blog'">Blog</router-link></li>
+                            <li><router-link :to="'/project'">项目作业</router-link></li>
                         </ul>
-                        <div class="form">
+                        <!-- <div class="form">
                             <a href="">注册</a>
                             <a href="" class="form-gb">登录</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
