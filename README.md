@@ -32,6 +32,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 更新日志
 
+2022-5-19 15:00
+
+1.   完成了博客列表页面的和博客详细内容页面的制作，并配置路由
+2.   分离数据于/src/data/database.js文件中
+
+
+
 2022-5-11 22:56
 
 1.   配置各页面的路由
