@@ -17,8 +17,7 @@ export default class DB {
             <p>上传服务器</p>\
             <p>&nbsp;</p>\
             <p>解压</p>\
-            <pre><code class='language-shell' lang='shell'>tar xzf redis-6.0.8.tar.gz\
-            </code></pre>\
+            <pre><code class='language-shell' lang='shell'>tar xzf redis-6.0.8.tar.gz</code></pre>\
             <p>&nbsp;</p>\
             <p>进入目录</p>\
             <p>编译</p>\
@@ -42,8 +41,7 @@ export default class DB {
             <h4 id='redisconf的其他配置项即说明'>redis.conf的其他配置项即说明</h4>\
             <p>ps aux | grep redis</p>\
             <p>当 Redis 以守护进程方式运行时，Redis 默认会把 pid 写入 /var/run/redis.pid 文件，可以通过 pidfile 指定</p>\
-            <pre><code>pidfile /var/run/redis.pid \
-            </code></pre>\
+            <pre><code>pidfile /var/run/redis.pid</code></pre>\
             <p>&nbsp;</p>\
             <p>默认端口为 6379</p>\
             <pre><code>port 6379\

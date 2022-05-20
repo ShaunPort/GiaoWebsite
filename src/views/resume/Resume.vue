@@ -164,7 +164,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url(../../css/global.less);
+@import url('../../css/global.less');
 
 .section1 {
     display: block;
