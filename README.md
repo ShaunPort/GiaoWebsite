@@ -4,7 +4,87 @@
 
 19219111344袁肖杨
 
+# 工程结构
 
+>   **Root**
+>
+>   >   **node_modules**		包文件
+>   >
+>   >   **public**		公共资源文件 单页面
+>   >
+>   >   >   favicon.icon
+>   >   >
+>   >   >   index.html
+>   >
+>   >   **src**
+>   >
+>   >   >   **assets**			静态资源文件（第三方库）
+>   >   >
+>   >   >   >   font-awesome-4.7.0
+>   >   >   >
+>   >   >   >   logo.png
+>   >   >
+>   >   >   **component**		组件文件
+>   >   >
+>   >   >   >   Card.vue
+>   >   >   >
+>   >   >   >   List.vue
+>   >   >   >
+>   >   >   >   Page.vue
+>   >   >
+>   >   >   **css**		样式文件
+>   >   >
+>   >   >   >   common.less
+>   >   >   >
+>   >   >   >   global.less
+>   >   >   >
+>   >   >   >   md.css
+>   >   >   >
+>   >   >   >   style.less
+>   >   >
+>   >   >   **data**			数据文件
+>   >   >
+>   >   >   >   database.js
+>   >   >
+>   >   >   **router**			路由配置
+>   >   >
+>   >   >   >   index.js
+>   >   >
+>   >   >   **store**			vuex未用
+>   >   >
+>   >   >   **views**
+>   >   >
+>   >   >   >   **blog**
+>   >   >   >
+>   >   >   >   >   Blog.vue
+>   >   >   >   >
+>   >   >   >   >   ShowBlog.vue
+>   >   >   >
+>   >   >   >   **resume**
+>   >   >   >
+>   >   >   >   >   个人照片.jpeg
+>   >   >   >   >
+>   >   >   >   >   Resume.vue
+>   >   >   >
+>   >   >   >   Home.vue
+>   >   >   >
+>   >   >   >   Main.vue
+>   >   >
+>   >   >   App.vue
+>   >   >
+>   >   >   main.js		
+>   >
+>   >   .browserslistrc		配置文件
+>   >
+>   >   .gitignore		git忽略管理文件
+>   >
+>   >   Babel.config.js		配置文件
+>   >
+>   >   package-lock.json	包配置信息文件
+>   >
+>   >   package.json		包版本控制文件
+>   >
+>   >   README.md		项目介绍文件
 
 ## Project setup
 ```
