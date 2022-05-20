@@ -101,15 +101,15 @@ header {
 </style>
 
 <template>
-    <div>
+    <div @click="falseChecked">
         <!-- 导航栏 -->
         <header class="mb-3">
             <div class="container">
                 <div class="navbar">
                     <!-- logo -->
-                    <a href="" class="logo">Giao</a>
+                    <a href="" class="logo">Mobius</a>
                     <!-- 手机端才展示的按钮 -->
-                    <label for="toggle-nav">
+                    <label @click="changeChecked" @click.stop>
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </label>
                     <!-- 用于手机端，菜单栏的弹出 -->
@@ -120,7 +120,7 @@ header {
                             <li><router-link :to="'/home'">首页</router-link></li>
                             <li><router-link :to="'/resume'">个人简历</router-link></li>
                             <li><router-link :to="'/blog'">Blog</router-link></li>
-                            <li><router-link :to="'/project'">项目作业</router-link></li>
+                            <!-- <li><router-link :to="'/project'">项目作业</router-link></li> -->
                         </ul>
                         <!-- <div class="form">
                             <a href="">注册</a>
@@ -136,5 +136,26 @@ header {
 </template>
 
 <script>
-export default {};
+export default {
+    data:function(){
+        return{
+
+        }
+    },
+    methods:{
+        falseChecked(){
+            let e=document.getElementById('toggle-nav')
+            console.log(e.checked)
+            e.checked=false;
+        },
+        changeChecked(){
+            let e=document.getElementById('toggle-nav')
+            console.log(e.checked)
+            e.checked=!e.checked;
+        },
+    },
+    mounted:function(){
+
+    }
+};
 </script>

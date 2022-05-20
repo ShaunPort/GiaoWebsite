@@ -2,6 +2,10 @@
 
 
 
+19219111344袁肖杨
+
+
+
 ## Project setup
 ```
 npm install
@@ -31,6 +35,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ## 更新日志
+
+2022-5-20 15:39
+
+1.   开发完成
+2.   完成首页动画
+3.   更改导航了logo文字
+4.   文字大小自适应
+
+
 
 2022-5-19 15:00
 
